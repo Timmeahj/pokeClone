@@ -2,14 +2,26 @@
   "name": "pokeclone",
   "version": "1.0.0",
   "description": "a Pokemon clone by coach Tim",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "test": "test"
+    "dev": "nodemon ./index.js",
+    "ui": "browser-sync start --config bs-config.js"
   },
+  "keywords": [],
   "author": "Tim Broos",
   "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "nodemon": "^2.0.4"
+  },
   "dependencies": {
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "node-fetch": "^3.0.0"
+    "express-openid-connect": "^2.5.1",
+    "express-session": "^1.17.2",
+    "node-fetch": "2.6.5",
+    "passport": "^0.5.0",
+    "passport-auth0": "^1.4.0",
+    "pug": "^3.0.0"
   }
 }

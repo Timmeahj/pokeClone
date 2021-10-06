@@ -1,6 +1,5 @@
-const json = require('../json/pokemon.json')
+const json = require('../json/pokemon.json');
 const {pokemon} = json;
-//import fetch from "node-fetch";
 const fetch = require('node-fetch');
 
 class Helper{
@@ -8,7 +7,7 @@ class Helper{
 
     static async fetchPokemon(url){
         const data = await fetch(url);
-        console.log(data)
+        console.log(data);
         return await data.json();
     }
 
@@ -18,8 +17,8 @@ class Helper{
 
     static async getMoves(name) {
         const pokemon = await this.getPokeByName(name);
-        return pokemon.moves
+        return pokemon.moves;
     }
 }
 
-module.exports = Helper
+module.exports = Helper;
