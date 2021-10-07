@@ -1,0 +1,22 @@
+body{
+    overflow: hidden;
+}
+
+#game{
+    background: url("../img/map.png") no-repeat;
+    width: 19581px;
+    height: 19200px;
+    background-size: cover;
+    position: absolute;
+    left:  calc(50% - 25px);
+    top: calc(50vh - 25px);
+}
+
+#player{
+    width: 48px;
+    height: 48px;
+    background: red;
+    position: absolute;
+    left: calc(50% - 24px);
+    top: calc(50vh - 24px);
+}

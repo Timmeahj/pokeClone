@@ -1,0 +1,16 @@
+nav
+
+            ul
+              li
+                a.navbar-brand(href='/')
+                  img(src='https://e7.pngegg.com/pngimages/607/890/png-clipart-pokeball-pokeball.png' width='30' height='30' alt='')
+              li
+                a(href='/menu') Play
+              if user
+                li
+                  a(href='/user') Profile
+                li
+                  a(href='/logout') Log out
+              else
+                li
+                  a(href='/login') Log in

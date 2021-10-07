@@ -1,0 +1,8 @@
+extends layout
+
+block main
+  div.View.UserView
+    h1.Banner Howdy, #{user.username}!
+    div.Message
+      pre.Details=JSON.stringify(user, null, 2)
+    a.navbar-brand(href='/user/edit') Edit
