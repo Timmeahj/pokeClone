@@ -3,7 +3,7 @@ const {pokemon} = json;
 const fetch = require('node-fetch');
 
 class Helper{
-    allPokemon = pokemon;
+    static allPokemon = pokemon;
 
     static async fetchPokemon(url){
         const data = await fetch(url);
@@ -12,7 +12,7 @@ class Helper{
     }
 
     static async getPokeByName(name){
-        return await this.fetchPokemon("https://pokeapi.co/api/v2/pokemon/1/");
+        return await this.fetchPokemon(this.allPokemon.find(pokemon => pokemon.name === name));
     }
 
     static async getMoves(name) {
