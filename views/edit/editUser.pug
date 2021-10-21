@@ -5,7 +5,9 @@ block main
     input#username(type='text' name='username' value=user.username)
     br
     br
-    button#edit Save
+    button#edit(onclick=`editUserRequest();`) Save
+    script.
+      let userObj = !{JSON.stringify(user)};
 
 
 
