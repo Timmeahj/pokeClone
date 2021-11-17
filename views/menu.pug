@@ -2,3 +2,9 @@ extends layout
 
 block main
     div Menu page
+    input#lobbyName(placeholder="lobby name")
+    ul
+        li
+            button#createLobby(onclick=`createLobby();`) Create lobby
+        li
+            button#joinLobby(onclick=`joinLobby();`) Join lobby

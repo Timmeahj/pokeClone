@@ -1,0 +1,12 @@
+if user
+    script(src='/socket.io/socket.io.js')
+    script.
+        const socket = io();
+        /*
+        const socket = io({
+                    auth: {
+                        token: user._id
+                    }
+                });
+
+         */
